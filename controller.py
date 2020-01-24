@@ -54,7 +54,7 @@ def run():
             view.show_board(battleship.board, rows)
             return 
         #miss condition
-        battleship.board[guess_row][guess_column] = "O"
+        battleship.board[guess_row][guess_column] = "X"
         view.miss()
         view.show_board(battleship.board, rows)
 

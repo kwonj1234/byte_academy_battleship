@@ -11,8 +11,7 @@ class Gameboard:
     def __init__(self, num_row, num_column):
         self.num_row = num_row
         self.num_column = num_column
-        self.board = [["X" for j in range(num_column)] for i in range(num_row)]
-       
+        self.board = [["|_|" for j in range(num_column)] for i in range(num_row)]
         self.ship_row = random.randrange(0, num_row)
         self.ship_column = random.randrange(0, num_column)
 

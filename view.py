@@ -8,7 +8,7 @@ def main_menu():
 def show_board(board, rows):
     board_view = []
     for row in range(rows):
-        board_view.append(" | ".join(board[row]))
+        board_view.append("".join(board[row]))
         print(board_view[row])
 
 #input a guess
